@@ -16,7 +16,7 @@ const Doctordetails = () => {
     const onSubmit = data => {
         data.title = name;
 
-        axios.post("http://localhost:5000/placeOrder", data)
+        axios.post("https://immense-woodland-86523.herokuapp.com/placeOrder", data)
             .then(res => {
                 if(res.data.insertedId){
                     alert('Order place successfully');
@@ -27,7 +27,7 @@ const Doctordetails = () => {
 
     useEffect(()=>{
         
-        fetch(`http://localhost:5000/services/${id}`)
+        fetch(`https://immense-woodland-86523.herokuapp.com/services/${id}`)
         .then(res => res.json())
         .then(data => {
             setservice(data)

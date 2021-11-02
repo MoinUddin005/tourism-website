@@ -8,7 +8,7 @@ const MyOrder = () => {
     const {user} = useAuth();
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/myOrder?email=${user.email}`)
+        axios.get(`https://immense-woodland-86523.herokuapp.com/myOrder?email=${user.email}`)
             .then(res => setOrders(res.data))
     },[]);
 
@@ -21,7 +21,7 @@ const MyOrder = () => {
         const confermation = window.confirm('Are you sure to delete this order?');
 
         if(confermation){
-            axios.delete(`http://localhost:5000/myOrder/${id}`)
+            axios.delete(`https://immense-woodland-86523.herokuapp.com/myOrder/${id}`)
             .then(res => {
                 if(res.data.deletedCount > 0){
                     alert('Order delete successfully');

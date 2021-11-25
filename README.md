@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-welcome to dentist point [live site link](https://attentive-hospital.web.app/).
+welcome to dentist point [live site link](https://dream-holidays-b4099.web.app/home).
 - This is a hospital  website
 - I use react for this website
 - I use firebase authentication

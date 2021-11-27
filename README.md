@@ -1,11 +1,10 @@
 # Getting Started with Create React App
 
 
-- This is a hospital  website
-- I use react for this website
-- I use firebase authentication
-- There has some private route where you can't enter without login
-- After login you are redirect automaticaly to home page or as your footprint
+• Display our service  travelling place in the home page.
+• Place an order in the checkout page as a tourist.
+• Secure user authentication using Firebase.
+• Fully responsive mobile first web pages.
 
 In the project i used:
 
